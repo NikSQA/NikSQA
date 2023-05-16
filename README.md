@@ -1,3 +1,4 @@
+[![Header](https://github.com/NikSQA/blob/main/assets/Avatar.png)]
 ## I'm a QA Engineer Slyusarev Nikita. 
 
 ### Language and Tools
