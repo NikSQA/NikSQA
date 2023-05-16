@@ -1,5 +1,4 @@
-![Header](https://github.com/NikSQA/NikSQA/blob/main/assets/logo.png)
-## I'm a QA Engineer Slyusarev Nikita. 
+## I'm a QA Engineer Slyusarev Nikita 
 
 ### Language and Tools
 ![Header](https://img.shields.io/badge/Jira-090909?style=for-the-badge&logo=jira&logoColor=136be1)
@@ -13,6 +12,14 @@
 ![Header](https://img.shields.io/badge/Fiddler-090909?style=for-the-badge&logo=fiddler&logoColor=8cc4d7)
 ![Header](https://img.shields.io/badge/CharlesProxy-090909?style=for-the-badge&logo=charlesproxy&logoColor=8cc4d7)
 ![Header](https://img.shields.io/badge/SQL-090909?style=for-the-badge&logo=SQL)
+![Header](https://img.shields.io/badge/SOAP-UI-090909?style=for-the-badge&logo=SOAP-UI)
+![Header](https://img.shields.io/badge/XML-090909?style=for-the-badge&logo=XML)
+![Header](https://img.shields.io/badge/XTML-090909?style=for-the-badge&logo=XTML)
+![Header](https://img.shields.io/badge/Linux-090909?style=for-the-badge&logo=Linux)
+![Header](https://img.shields.io/badge/REST-090909?style=for-the-badge&logo=REST)
+![Header](https://img.shields.io/badge/XTML-090909?style=for-the-badge&logo=XTML)
+![Header](https://img.shields.io/badge/CSS-090909?style=for-the-badge&logo=CSS)
+![Header](https://img.shields.io/badge/Kibana-090909?style=for-the-badge&logo=Kibana)
 
 ### Testing Documentation
 
