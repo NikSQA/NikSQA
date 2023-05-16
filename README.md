@@ -12,7 +12,7 @@
 ![Header](https://img.shields.io/badge/Fiddler-090909?style=for-the-badge&logo=fiddler&logoColor=8cc4d7)
 ![Header](https://img.shields.io/badge/CharlesProxy-090909?style=for-the-badge&logo=charlesproxy&logoColor=8cc4d7)
 ![Header](https://img.shields.io/badge/SQL-090909?style=for-the-badge&logo=SQL)
-![Header](https://img.shields.io/badge/SOAP-UI-090909?style=for-the-badge&logo=SOAP-UI)
+![Header](https://img.shields.io/badge/SOAP-090909?style=for-the-badge&logo=SOAP)
 ![Header](https://img.shields.io/badge/XML-090909?style=for-the-badge&logo=XML)
 ![Header](https://img.shields.io/badge/XTML-090909?style=for-the-badge&logo=XTML)
 ![Header](https://img.shields.io/badge/Linux-090909?style=for-the-badge&logo=Linux)
