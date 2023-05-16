@@ -1,4 +1,4 @@
-[![Header](https://github.com/NikSQA/NikSQA/blob/main/assets/Avatar.png)]
+![Header](https://github.com/NikSQA/NikSQA/blob/main/assets/Avatar.png)
 ## I'm a QA Engineer Slyusarev Nikita. 
 
 ### Language and Tools
