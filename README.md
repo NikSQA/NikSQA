@@ -24,7 +24,7 @@
 ### Testing Documentation
 
 - [Checklists](https://github.com/NikSQA/checklist)
-- [Test-Suites and Test-Cases](https://github.com/NikSQA/test-cases)
+- [Test-Cases](https://github.com/NikSQA/test-cases)
 - [Bug-Reports](https://github.com/NikSQA/bug-reports)
 - [SQL Queries](https://github.com/NikSQA/SQL)
 - [Postman Collections](https://github.com/NikSQA/postman)
