@@ -1,0 +1,504 @@
+{
+	"info": {
+		"_postman_id": "eabfc51f-ba08-4550-8e9a-0b151c7379c5",
+		"name": "Test Timetta",
+		"description": "Information about the architecture, authentication logic, and recommendations for testing and debugging is available  \nin help - [https://ru.help.timetta.com/article/107-public-api](https://ru.help.timetta.com/article/107-public-api)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28824851"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{      \r\n   \"name\": \"Nik Test\",\r\n   \"email\": \"nik_test@test-task.ru\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/odata/Users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"odata",
+								"Users"
+							]
+						},
+						"description": "Create User entity.\n\nRequired fileds:\n\n- name\n- email - must contain domains available for tenant."
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{      \r\n   \"name\": \"Nik Test\",\r\n   \"email\": \"nik_test@test-task.ru\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/odata/Users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"odata",
+										"Users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 15:18:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Location",
+									"value": "https://api.timetta.com/odata/Users(bac49b24-a1a3-4be9-8e43-c2801b388fb8)"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:45ac7354-8579-4724-9181-96a2d35b77ed"
+								},
+								{
+									"key": "OData-Version",
+									"value": "4.0"
+								},
+								{
+									"key": "X-Rate-Limit-Limit",
+									"value": "1h"
+								},
+								{
+									"key": "X-Rate-Limit-Remaining",
+									"value": "2997"
+								},
+								{
+									"key": "X-Rate-Limit-Reset",
+									"value": "2023-07-28T16:05:22.5863177Z"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15724800; includeSubDomains"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"@odata.context\": \"https://api.timetta.com/odata/$metadata#Users/$entity\",\n    \"rowVersion\": 118904612,\n    \"code\": null,\n    \"resourceType\": \"User\",\n    \"resourcePoolId\": \"1c2c94fb-7f00-4616-8192-aa5781d4bc69\",\n    \"name\": \"Nik Test\",\n    \"createdById\": \"766a2318-b812-4cb5-b6c2-b5231fd6ff16\",\n    \"modifiedById\": \"766a2318-b812-4cb5-b6c2-b5231fd6ff16\",\n    \"id\": \"bac49b24-a1a3-4be9-8e43-c2801b388fb8\",\n    \"created\": \"2023-07-28T18:18:58.2395514+03:00\",\n    \"modified\": \"2023-07-28T15:18:58.2079661Z\",\n    \"isActive\": true,\n    \"firstWorkDay\": null,\n    \"lastWorkDay\": null,\n    \"dateValue1\": null,\n    \"dateValue2\": null,\n    \"dateValue3\": null,\n    \"dateValue4\": null,\n    \"dateValue5\": null,\n    \"authProviderId\": \"8cf2fe03-d708-4510-a332-69377fc434d1\",\n    \"email\": \"nik_test@test-task.ru\",\n    \"licensed\": false,\n    \"position\": null,\n    \"phone\": null,\n    \"supervisorId\": null,\n    \"restrictActivities\": false,\n    \"timeSheetTemplateId\": \"e590d1c1-50e8-467b-a9b5-787cca869446\",\n    \"costNormalizationRuleId\": null,\n    \"departmentId\": null,\n    \"locationId\": null,\n    \"levelId\": null,\n    \"gradeId\": null,\n    \"stringValue1\": null,\n    \"stringValue2\": null,\n    \"stringValue3\": null,\n    \"stringValue4\": null,\n    \"stringValue5\": null,\n    \"decimalValue1\": null,\n    \"decimalValue2\": null,\n    \"decimalValue3\": null,\n    \"decimalValue4\": null,\n    \"decimalValue5\": null,\n    \"lookupValue1Id\": null,\n    \"lookupValue2Id\": null,\n    \"lookupValue3Id\": null,\n    \"lookupValue4Id\": null,\n    \"lookupValue5Id\": null,\n    \"integerValue1\": null,\n    \"integerValue2\": null,\n    \"integerValue3\": null,\n    \"integerValue4\": null,\n    \"integerValue5\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/odata/Users(bac49b24-a1a3-4be9-8e43-c2801b388fb8)?$select=name,authProvider,id,email,position,phone,firstWorkDay,lastWorkDay,code,editAllowed,isActive,licensed&$expand=resourcePool($select=name,id),department($select=name,id),supervisor($select=name,id),location($select=name,id),grade($select=name,id)",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"odata",
+								"Users(bac49b24-a1a3-4be9-8e43-c2801b388fb8)"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "name,authProvider,id,email,position,phone,firstWorkDay,lastWorkDay,code,editAllowed,isActive,licensed"
+								},
+								{
+									"key": "$expand",
+									"value": "resourcePool($select=name,id),department($select=name,id),supervisor($select=name,id),location($select=name,id),grade($select=name,id)"
+								}
+							]
+						},
+						"description": "Get User entity."
+					},
+					"response": [
+						{
+							"name": "Get User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/odata/Users(bac49b24-a1a3-4be9-8e43-c2801b388fb8)?$select=name,authProvider,id,email,position,phone,firstWorkDay,lastWorkDay,code,editAllowed,isActive,licensed&$expand=resourcePool($select=name,id),department($select=name,id),supervisor($select=name,id),location($select=name,id),grade($select=name,id)",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"odata",
+										"Users(bac49b24-a1a3-4be9-8e43-c2801b388fb8)"
+									],
+									"query": [
+										{
+											"key": "$select",
+											"value": "name,authProvider,id,email,position,phone,firstWorkDay,lastWorkDay,code,editAllowed,isActive,licensed"
+										},
+										{
+											"key": "$expand",
+											"value": "resourcePool($select=name,id),department($select=name,id),supervisor($select=name,id),location($select=name,id),grade($select=name,id)"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 21:09:38 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:45ac7354-8579-4724-9181-96a2d35b77ed"
+								},
+								{
+									"key": "OData-Version",
+									"value": "4.0"
+								},
+								{
+									"key": "X-Rate-Limit-Limit",
+									"value": "1h"
+								},
+								{
+									"key": "X-Rate-Limit-Remaining",
+									"value": "2998"
+								},
+								{
+									"key": "X-Rate-Limit-Reset",
+									"value": "2023-07-28T22:08:19.7431973Z"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15724800; includeSubDomains"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"@odata.context\": \"https://api.timetta.com/odata/$metadata#Users(name,authProvider,id,email,position,phone,firstWorkDay,lastWorkDay,code,editAllowed,isActive,licensed,resourcePool(name,id),department(name,id),supervisor(name,id),location(name,id),grade(name,id))/$entity\",\n    \"code\": null,\n    \"name\": \"Nik Test\",\n    \"id\": \"bac49b24-a1a3-4be9-8e43-c2801b388fb8\",\n    \"isActive\": true,\n    \"firstWorkDay\": null,\n    \"lastWorkDay\": null,\n    \"email\": \"nik_test@test-task.ru\",\n    \"licensed\": false,\n    \"position\": null,\n    \"phone\": null,\n    \"editAllowed\": true,\n    \"resourcePool\": {\n        \"name\": \"Все ресурсы\",\n        \"id\": \"1c2c94fb-7f00-4616-8192-aa5781d4bc69\"\n    },\n    \"department\": null,\n    \"supervisor\": null,\n    \"location\": null,\n    \"grade\": null\n}"
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Query Project Billing Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/odata/ProjectBillingTypes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"odata",
+								"ProjectBillingTypes"
+							]
+						},
+						"description": "Request project billing types."
+					},
+					"response": [
+						{
+							"name": "Query Project Billing Types",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/odata/ProjectBillingTypes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"odata",
+										"ProjectBillingTypes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 15:36:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:45ac7354-8579-4724-9181-96a2d35b77ed"
+								},
+								{
+									"key": "OData-Version",
+									"value": "4.0"
+								},
+								{
+									"key": "X-Rate-Limit-Limit",
+									"value": "1h"
+								},
+								{
+									"key": "X-Rate-Limit-Remaining",
+									"value": "2991"
+								},
+								{
+									"key": "X-Rate-Limit-Reset",
+									"value": "2023-07-28T15:58:31.5779779Z"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15724800; includeSubDomains"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"@odata.context\": \"https://api.timetta.com/odata/$metadata#ProjectBillingTypes\",\n    \"value\": [\n        {\n            \"code\": \"NonBillable\",\n            \"name\": \"Неоплачиваемый\",\n            \"id\": \"4d1a525f-3abc-4871-a64a-349c1dd3cabf\",\n            \"created\": \"2023-07-24T16:06:15.69218Z\",\n            \"modified\": \"2023-07-24T16:06:15.69218Z\",\n            \"isActive\": true\n        },\n        {\n            \"code\": \"TM\",\n            \"name\": \"Время и затраты\",\n            \"id\": \"584dddc1-94df-43b2-b3f3-372c02fcb016\",\n            \"created\": \"2023-07-24T16:06:15.692252Z\",\n            \"modified\": \"2023-07-24T16:06:15.692252Z\",\n            \"isActive\": true\n        },\n        {\n            \"code\": \"FixedBid\",\n            \"name\": \"Фиксированная стоимость\",\n            \"id\": \"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\n            \"created\": \"2023-07-24T16:06:15.692318Z\",\n            \"modified\": \"2023-07-24T16:06:15.692318Z\",\n            \"isActive\": true\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Project Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"New project NikSQA\",\r\n    \"billingTypeId\": \"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\r\n    \"managerId\": \"bac49b24-a1a3-4be9-8e43-c2801b388fb8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/odata/Projects",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"odata",
+								"Projects"
+							]
+						},
+						"description": "Create \"Project\" entity.\n\nTo get billing types see example \"Query Project Billing Types\" from \"Enums\" folder."
+					},
+					"response": [
+						{
+							"name": "Create Project Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"New project NikSQA\",\r\n    \"billingTypeId\": \"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\r\n    \"managerId\": \"bac49b24-a1a3-4be9-8e43-c2801b388fb8\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/odata/Projects",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"odata",
+										"Projects"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 21:15:44 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Location",
+									"value": "https://api.timetta.com/odata/Projects(8f73dbef-74a7-4030-a638-64a09e2485e7)"
+								},
+								{
+									"key": "Request-Context",
+									"value": "appId=cid-v1:45ac7354-8579-4724-9181-96a2d35b77ed"
+								},
+								{
+									"key": "OData-Version",
+									"value": "4.0"
+								},
+								{
+									"key": "X-Rate-Limit-Limit",
+									"value": "1h"
+								},
+								{
+									"key": "X-Rate-Limit-Remaining",
+									"value": "2997"
+								},
+								{
+									"key": "X-Rate-Limit-Reset",
+									"value": "2023-07-28T22:05:39.5047818Z"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15724800; includeSubDomains"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"@odata.context\": \"https://api.timetta.com/odata/$metadata#Projects/$entity\",\n    \"startDate\": null,\n    \"endDate\": null,\n    \"dateValue1\": null,\n    \"dateValue2\": null,\n    \"dateValue3\": null,\n    \"dateValue4\": null,\n    \"dateValue5\": null,\n    \"code\": null,\n    \"description\": null,\n    \"externalUrl\": null,\n    \"skipManagerApprove\": false,\n    \"allowTimeEntry\": false,\n    \"stateId\": \"9752fc91-714a-414f-9c03-8a3a1d6cce06\",\n    \"billingTypeId\": \"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\n    \"currencyId\": \"bb1324d7-809b-4741-88b7-966e66403db7\",\n    \"managerId\": \"bac49b24-a1a3-4be9-8e43-c2801b388fb8\",\n    \"organizationId\": null,\n    \"programId\": null,\n    \"revenueRecognitionMethodId\": null,\n    \"sourceProjectId\": null,\n    \"rowVersion\": 118964409,\n    \"stringValue1\": null,\n    \"stringValue2\": null,\n    \"stringValue3\": null,\n    \"stringValue4\": null,\n    \"stringValue5\": null,\n    \"decimalValue1\": null,\n    \"decimalValue2\": null,\n    \"decimalValue3\": null,\n    \"decimalValue4\": null,\n    \"decimalValue5\": null,\n    \"lookupValue1Id\": null,\n    \"lookupValue2Id\": null,\n    \"lookupValue3Id\": null,\n    \"lookupValue4Id\": null,\n    \"lookupValue5Id\": null,\n    \"integerValue1\": null,\n    \"integerValue2\": null,\n    \"integerValue3\": null,\n    \"integerValue4\": null,\n    \"integerValue5\": null,\n    \"name\": \"New project NikSQA\",\n    \"createdById\": \"766a2318-b812-4cb5-b6c2-b5231fd6ff16\",\n    \"modifiedById\": \"766a2318-b812-4cb5-b6c2-b5231fd6ff16\",\n    \"id\": \"8f73dbef-74a7-4030-a638-64a09e2485e7\",\n    \"created\": \"2023-07-29T00:15:44.5952639+03:00\",\n    \"modified\": \"2023-07-28T21:15:44.5169771Z\",\n    \"isActive\": true\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accessToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "userEmail",
+			"value": "iagafonov@test-task.ru"
+		},
+		{
+			"key": "userPassword",
+			"value": "J8bu6nFg"
+		},
+		{
+			"key": "accessToken",
+			"value": ""
+		},
+		{
+			"key": "refreshToken",
+			"value": ""
+		},
+		{
+			"key": "authBaseUrl",
+			"value": "https://auth.timetta.com",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://api.timetta.com",
+			"type": "string"
+		},
+		{
+			"key": "reportingApiBaseUrl",
+			"value": "https://reporting.timetta.com",
+			"type": "string"
+		}
+	]
+}
